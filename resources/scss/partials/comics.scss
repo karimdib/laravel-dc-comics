@@ -1,0 +1,51 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container-card {
+    margin-top: 80px;
+}
+
+.thumb {
+    position: relative;
+    z-index: 30;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.card:hover {
+    .detail-comic {
+        z-index: 300;
+    }
+
+    .layout-filter {
+        z-index: 200;
+    }
+}
+
+.detail-comic {
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+.layout-filter {
+    position: absolute;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.5);
+    inset: 0;
+}
+
+.form-column>.col {
+    margin-bottom: 20px;
+}
+
+.col {
+    margin: 20px;
+}

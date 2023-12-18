@@ -1,0 +1,28 @@
+@import '~bootstrap/scss/bootstrap';
+@import './partials/comics.scss';
+@import './partials/heeader.scss';
+@import './partials/footer.scss';
+@import './partials/hero.scss';
+@import './partials/comics.scss';
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.show-row {
+    justify-content: center;
+}
+
+.col-4 {
+    margin-bottom: 30px;
+}
+
+a {
+    height: 100%;
+}

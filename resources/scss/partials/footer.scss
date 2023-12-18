@@ -1,0 +1,17 @@
+footer {
+
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+}
