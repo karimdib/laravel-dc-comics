@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Comics;
 use App\Http\Requests\StoreComicsRequest;
 use App\Http\Requests\UpdateComicsRequest;
+use Illuminate\Http\Request;
 
 class ComicsController extends Controller
 
@@ -30,12 +31,11 @@ class ComicsController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreComicsRequest $request)
+    public function store(Request $request)
     {
         $data = $request->all();
         dd($data);
     }
-
     /**
      * Display the specified resource.
      */

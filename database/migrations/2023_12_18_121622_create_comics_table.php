@@ -16,7 +16,7 @@ return new class extends Migration
             $table->text('title', 1000);
             $table->text('description');
             $table->text('thumb');
-            $table->text('price');
+            $table->string('price');
             $table->text('series');
             $table->text('sale_date');
             $table->text('type');
