@@ -10,6 +10,7 @@
     <a href="{{route('comics.index')}}">
         <h2 class="text-center m-3">Torna Indietro</h2>
     </a>
+
 </div>
 
 @endsection
