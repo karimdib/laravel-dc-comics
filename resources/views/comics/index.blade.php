@@ -13,7 +13,7 @@
                     <img class="thumb" src="{{$comic['thumb']}}" alt="">
                     <ul class="detail-comic">
                         <li>{{$comic['sale_date']}}</li>
-                        <li>{{$comic['price']}}</li>
+                        <li>${{$comic['price']}}</li>
                         <li>{{ $comic['series']}}</li>
                         <li>{{$comic['type']}}</li>
 
