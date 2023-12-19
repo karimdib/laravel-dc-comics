@@ -8,7 +8,7 @@
         </a>
         <div class="row">
             @forelse ($comics as $comic)
-            <div class="card col-4">
+            <div class="card col-4 mb-5">
                 <a href="{{route('comics.show',$comic['id'] )}}">
                     <img class="thumb" src="{{$comic['thumb']}}" alt="">
                     <ul class="detail-comic">
@@ -16,12 +16,15 @@
                         <li>${{$comic['price']}}</li>
                         <li>{{ $comic['series']}}</li>
                         <li>{{$comic['type']}}</li>
-
                     </ul>
+                    <form class="text-center" action="{{route('comics.destroy', $comic['id'])}}" method="POST">
+                        @csrf
+                        @method('delete')
+                        <input type="submit" value="Elimina">
+                    </form>
                     <div class="layout-filter"></div>
                 </a>
             </div>
-
             @empty
             @endforelse
 
