@@ -34,14 +34,14 @@ class ComicsController extends Controller
     public function store(Request $request)
     {
         $data = $request->all();
-        dd($data);
+        return view('comics.show', compact('data'));
     }
     /**
      * Display the specified resource.
      */
-    public function show(Comics $comics)
+    public function show(Comics $comic)
     {
-        return view('comics.show', compact('comics'));
+        return view('comics.show', compact('comic'));
     }
 
     /**
